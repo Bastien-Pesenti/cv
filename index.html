@@ -211,6 +211,9 @@
     </div>
   </div>
 </div>
+        <div class="container">
+    <canvas id="skillsChart"></canvas>
+</div>
 <div class="section" id="portfolio">
   <div class="container">
     <div class="row">
@@ -784,5 +787,29 @@
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+    <script>
+    var ctx = document.getElementById('skillsChart').getContext('2d');
+    var myRadarChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Communication', 'Analyse de Données', 'Créativité', 'Travail en Équipe', 'Gestion de Projet', 'SEO/SEM'],
+            datasets: [{
+                label: 'Compétences en Marketing',
+                data: [5, 4, 4, 5, 3, 4],
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scale: {
+                ticks: { 
+                    beginAtZero: true,
+                    max: 5
+                }
+            }
+        }
+    });
+</script>
   </body>
 </html>
