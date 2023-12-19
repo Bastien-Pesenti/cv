@@ -68,6 +68,19 @@
 }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+    canvas#skillsChart {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 768px) {
+        canvas#skillsChart {
+            width: 50%; /* Réduit la largeur du canvas de moitié */
+            height: auto;
+        }
+    }
+</style>
   </head>
   <body id="top">
     <header>
@@ -217,7 +230,7 @@
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div class="card-body">
         <div class="row">
-        <div class="container" style="width: 50%; height: 50%;">
+        <div class="container">
     <canvas id="skillsChart"></canvas>
 </div>
         </div>
