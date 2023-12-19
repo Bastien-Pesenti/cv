@@ -26,8 +26,8 @@
 }
 
 .skill-card {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     perspective: 1000px;
     margin: 10px;
 }
@@ -66,28 +66,6 @@
     transform: rotateY(180deg);
     background-color: #007bff; /* Vous pouvez changer la couleur de fond */
 }
-      canvas#skillsChart {
-        width: 100%;
-        height: auto;
-    }
-
-    @media (min-width: 768px) {
-        canvas#skillsChart {
-            width: 50%;
-            height: auto;
-        }
-    }
-          .chart-container {
-        width: 100%;
-        height: auto;
-    }
-
-    @media (min-width: 768px) {
-        .chart-container {
-            width: 50%; /* Réduit la largeur du conteneur de moitié */
-            height: auto;
-        }
-    }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
@@ -239,9 +217,6 @@
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div class="card-body">
         <div class="row">
-        <div class="chart-container" style="position: relative; height:40vh; width:80vw">
-    <canvas id="skillsChart"></canvas>
-</div>
           <div class="container">
     <canvas id="skillsChart"></canvas>
 </div>
