@@ -67,36 +67,6 @@
     background-color: #007bff; /* Vous pouvez changer la couleur de fond */
 }
     </style>
-    <script>
-    var ctx = document.getElementById('skillsChart').getContext('2d');
-    var myRadarChart = new Chart(ctx, {
-        type: 'radar',
-        data: {
-            labels: ['Communication', 'Analyse de Données', 'Créativité', 'Travail en Équipe', 'Gestion de Projet', 'SEO/SEM'],
-            datasets: [{
-                label: 'Compétences en Marketing',
-                data: [5, 4, 4, 5, 3, 4],
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                r: {
-                    angleLines: {
-                        display: true
-                    },
-                    suggestedMin: 0, // Définit le minimum de l'échelle à 0
-                    suggestedMax: 5, // Définit le maximum de l'échelle à 5
-                    ticks: {
-                        stepSize: 1 // Ajuste la taille des pas entre les valeurs de l'échelle
-                    }
-                }
-            }
-        }
-    });
-</script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body id="top">
@@ -843,10 +813,16 @@
             }]
         },
         options: {
-            scale: {
-                ticks: { 
-                    beginAtZero: true,
-                    max: 5
+            scales: {
+                r: {
+                    angleLines: {
+                        display: true
+                    },
+                    suggestedMin: 0, // Définit le minimum de l'échelle à 0
+                    suggestedMax: 5, // Définit le maximum de l'échelle à 5
+                    ticks: {
+                        stepSize: 1 // Ajuste la taille des pas entre les valeurs de l'échelle
+                    }
                 }
             }
         }
