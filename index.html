@@ -18,55 +18,7 @@
         }
       </style>
     </noscript>
-    <style>
-      .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-.skill-card {
-    width: 150px;
-    height: 150px;
-    perspective: 1000px;
-    margin: 10px;
-}
-
-.skill-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.skill-card:hover .skill-card-inner {
-    transform: rotateY(180deg);
-}
-
-.skill-card-front, .skill-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    background: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.skill-card-front {
-    color: black;
-}
-
-.skill-card-back {
-    color: white;
-    transform: rotateY(180deg);
-    background-color: #007bff; /* Vous pouvez changer la couleur de fond */
-}
-    </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body id="top">
@@ -315,20 +267,6 @@
     </div>
   </div>
 </div>
-        <div class="skills-container">
-    <div class="skill-card" onmouseover="this.classList.toggle('flipped')" onmouseout="this.classList.toggle('flipped')">
-        <div class="skill-card-inner">
-            <div class="skill-card-front">
-                <p>Salesforce</p>
-            </div>
-            <div class="skill-card-back">
-                <p>Détails sur Salesforce</p>
-            </div>
-        </div>
-    </div>
-    <!-- Répétez pour chaque compétence, en modifiant le contenu des balises <p> -->
-</div>
-
 <div class="section" id="experience">
   <div class="container cc-experience">
     <div class="h4 text-center mb-4 title">Mes Experiences</div>
